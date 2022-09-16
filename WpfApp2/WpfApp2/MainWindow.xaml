@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="450" Width="320" MinWidth="320" MaxWidth="320" MinHeight="450" MaxHeight="450">
+    <Grid ShowGridLines="False" Width="300">
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <UniformGrid Rows="6" Columns="4" Width="290" Height="280" VerticalAlignment="Bottom" Margin="0,0,0,5">
+            <Button x:Name="Percent" Content="%" FontWeight="Bold" FontSize="18"/>
+            <Button x:Name="ClearAllLines" Content="CE" FontWeight="Bold" FontSize="18" Click="ClearLine_Click"/>
+            <Button x:Name="ClearLine" Content="C" FontWeight="Bold" FontSize="18" Click="ClearAllLines_Click"/>
+            <Button x:Name="Erase" Content="⌫" FontWeight="Bold" FontSize="18" Click="Erase_Click"/>
+            <Button x:Name="OneDivideX" Content="1/x" FontWeight="Bold" FontSize="18" Click="OneDivideX_Click"/>
+            <Button x:Name="XInRank2" Content="x²" FontWeight="Bold" FontSize="18" Click="XInRank2_Click"/>
+            <Button x:Name="RootOfX" Content="√x" FontWeight="Bold" FontSize="18" Click="RootOfX_Click"/>
+            <Button x:Name="Divine" Content="÷" FontWeight="Bold" FontSize="18" Click="Divine_Click"/>
+            <Button x:Name="SevenBut" Content="7" FontWeight="Bold" FontSize="18" Click="SevenBut_Click"/>
+            <Button x:Name="EightBut" Content="8" FontWeight="Bold" FontSize="18" Click="EightBut_Click"/>
+            <Button x:Name="NineBut" Content="9" FontWeight="Bold" FontSize="18" Click="NineBut_Click"/>
+            <Button x:Name="Multiply" Content="×" FontWeight="Bold" FontSize="18" Click="Multiply_Click"/>
+            <Button x:Name="FourBut" Content="4" FontWeight="Bold" FontSize="18" Click="FourBut_Click"/>
+            <Button x:Name="FiveBut" Content="5" FontWeight="Bold" FontSize="18" Click="FiveBut_Click"/>
+            <Button x:Name="SixBut" Content="6" FontWeight="Bold" FontSize="18" Click="SixBut_Click"/>
+            <Button x:Name="MinusBut" Content="-" FontWeight="Bold" FontSize="18" Click="MinusBut_Click"/>
+            <Button x:Name="OneBut" Content="1" FontWeight="Bold" FontSize="18" Click="OneBut_Click"/>
+            <Button x:Name="TwoBut" Content="2" FontWeight="Bold" FontSize="18" Click="TwoBut_Click"/>
+            <Button x:Name="ThreeBut" Content="3" FontWeight="Bold" FontSize="18" Click="ThreeBut_Click"/>
+            <Button x:Name="PlusBut" Content="+" FontWeight="Bold" FontSize="18" Click="PlusBut_Click"/>
+            <Button x:Name="PlusMinusBut" Content="+/-" FontWeight="Bold" FontSize="18" Click="PlusMinusBut_Click"/>
+            <Button x:Name="ZeroBut" Content="0" FontWeight="Bold" FontSize="18" Click="ZeroBut_Click"/>
+            <Button x:Name="DotBut" Content="," FontWeight="Bold" FontSize="18" Click="DotBut_Click"/>
+            <Button x:Name="EnterBut" Content="=" FontWeight="Bold" FontSize="18" Click="EnterBut_Click"/>
+
+        </UniformGrid>
+        <Label x:Name="Row1" Content="0" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Width="290" Height="55" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <Label x:Name="Row2" Content="" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="290" Height="33" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+    </Grid>
+</Window>
